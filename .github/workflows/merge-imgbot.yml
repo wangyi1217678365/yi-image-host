@@ -17,7 +17,7 @@ jobs:
       - name: automerge
         uses: "pascalgn/automerge-action@v0.15.6"
         env:
-          GITHUB_TOKEN: "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"
+          GITHUB_TOKEN: "${{ secrets.MERGE_TOKEN }}"
           MERGE_LABELS: ""
           MERGE_METHOD: "squash"
           MERGE_COMMIT_MESSAGE: "pull-request-description"
